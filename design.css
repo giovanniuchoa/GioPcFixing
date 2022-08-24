@@ -1,0 +1,98 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(38, 91, 151),rgb(152, 168, 175), rgb(38, 106, 151));
+    font-family: 'Rebrand';
+}
+
+/* Navbar */
+#home:hover{
+    color: black;
+}
+
+#servicos:hover{
+    color: black;
+}
+
+#cntt:hover{
+    color: black;
+}
+
+/* Serviços */
+.cards {
+    background-color: rgb(175, 174, 174);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.cards div {
+    background-color: rgb(221, 221, 221);
+    margin-bottom: 3vh;
+}
+
+/* Contatos */
+.contato {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    padding: 5%;
+    padding-top: 2%;
+}
+
+.icones {
+    color: black;
+    font-size: 8vh;
+}
+
+.redes {
+    font-size: 2vh;
+}
+
+.titulo {
+    font-size: 3vh;
+}
+
+/* Home */
+.home {
+    margin-bottom: 30vh;
+}
+
+/* Fontes */
+@font-face {
+    font-family: 'Rebrand';
+    src: url('fonte/Rebrand\ Dis\ Medium.ttf') format('truetype');
+}
+
+/* Responsividade */
+@media only screen and (max-width: 600px) {
+    .icones {
+      font-size: 5vh;
+    }
+    .redes {
+        display: none;
+    }
+    .titulo{
+        font-size: 2vh;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .banner img {
+        height: 500px;
+    }
+    .banner {
+        width: 800px;
+        margin-left: 10%;
+    }
+    .redes {
+        font-size: 2vh;
+    }
+}
